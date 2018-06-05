@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "UCOSP Crawl - Call Schema",
+    "description": "The schema for a row of the raw data in the crawl catalog. (The final dataset as additional derived columns)",
+    "type": "object",
+    "properties": {
+        "arguments": {
+            "description": "Any arguments passed to the javascript call. When present takes the form of an object with numeric string keys e.g. '0', '1', up to a max of '9'. Validator does not check for this yet as couldn't find a satisfactory regex",
+            "type": "string",
+        },
+        "call_stack": {
+            "description": "69% of calls have no call_stack. Where there is a call_stack, it appears you can: split on '\n' and get the same values that are in func_name, script_url, script_col, script_line - func_name@script_url:script_line:script_col",
+            "type": "string",
+            "pattern": "^$|^(?!undefined).*$|"
+        },
+        "crawl_id": {
+            "description": "The ID for this crawl",
+            "const": 1
+        },
+        "func_name": {
+            "description": "Empty string or the name of the function that was executed. Note more liberal than current validation.",
+            "type": "string",
+        },
+        "in_iframe": {
+            "description": "Was JS being exectuted in an iframe.",
+            "type": "boolean"
+        },
+        "location": {
+            "description": "The location of the loaded page where from which javascript calls are being captured.",
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?|http?):\/\/\S*",
+        },
+        "operation": {
+            "description": "The type of operation.",
+            "type": "string",
+            "enum": ["get", "set", "call", "set (failed)"]
+        },
+        "script_col": {
+            "description": "The column location in the script where the call is captured. We want this to be an integer, but we must test for numeric string.",
+            "type": "string",
+            "pattern": "^$|^[0-9]+$"
+        },
+        "script_line": {
+            "description": "The line location in the script where the call is captured. We want this to be an integer, but we must test for numeric string.",
+            "type": "string",
+            "pattern": "^[0-9]+$"
+        },
+        "script_loc_eval": {
+            "description": "Empty string or .... What is this?",
+            "type": "string",
+            "pattern": "^$|^(line [0-9]* > (eval|Function)[ ]?)*$"
+        },
+        "script_url": {
+            "description": "The location of the script url that is being executed. Liberally letting things through to see what's there.",
+            "type": "string",
+            "minLength": 1,
+        },
+        "symbol": {
+            "description": "The js Symbol. Has 282 possible values in this dataset (this is derived there are more possible symbols in JS)",
+            "type": "string",
+            "enum": {{ list_of_symbols }}
+        },
+        "time_stamp": {
+            "description": "Time at which call was captured. Valid timestamps 2017-12-16T10:12:58Z, 2017-12-16T10:12:58.000Z, 2017-12-16T10:12:58+0000 ",
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.?\d{0,3}Z$|^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{4}$"
+        },
+        "value": {
+            "description": "The value that was passed to the javascript call. Can be a few or over 1million characters.",
+            "type": "string"
+        }
+        
+    },
+    "required": [
+        "call_stack",
+        "crawl_id",
+        "func_name",
+        "in_iframe",
+        "location",
+        "operation",
+        "script_col",
+        "script_line",
+        "script_loc_eval",
+        "script_url",
+        "symbol",
+        "time_stamp",
+        "value",
+    ]
+}
