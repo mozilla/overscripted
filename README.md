@@ -25,7 +25,7 @@ Analyses submitted for this challenge will be judged on the following attributes
 #### Rigorous scientific approach
 Submissions will be evaluated based on adherence to scientific method. Intermediate assumptions should be validated and supporting evidence referenced to where results are interpreted.
 #### Alignment with Mozilla’s 10 founding principles
-Submissions’ main finding is relevant to one of the 10 founding principles. 
+Submissions’ main finding is relevant one or more of the 10 founding principles in Mozilla’s [Manifesto](https://www.mozilla.org/en-US/about/manifesto/). 
 #### Relevance
 Analysis clearly shows or targets one or more of the three categories of the challenge: 
 - Tracking and Privacy
