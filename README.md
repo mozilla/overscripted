@@ -3,7 +3,7 @@
 
 The Systems Research Group at Mozilla have created and open sourced a data set of publicly available information that was collected by a November 2017 Web crawl. We want to empower the community to explore the unseen or otherwise not obvious series of JavaScript execution events that are triggered once a user visits a webpage, and all the first- and third-party events that are set in motion when people retrieve content.
 
-This is an exploratory data analysis. challenge. Mozilla would like to encourage participants to think outside the proverbial box, get creative, get under the surface. We want participants to analyze the data and come up with exciting new observations, patterns, research findings fitting into one of the following three categories:
+This is an exploratory data analysis challenge. Mozilla would like to encourage participants to think outside the proverbial box, get creative, and get under the surface. We want participants to analyze the data and come up with exciting new observations, patterns, and research findings fitting into one of the following three categories:
 
 - Tracking and Privacy
 - Web Technologies and the Shape of the Modern Web
@@ -32,7 +32,7 @@ Analysis clearly shows or targets one or more of the three categories of the cha
 - Web Technologies and the Shape of the Modern Web
 - Equality, Neutrality and Law
 #### Creativity 
-submission demonstrates an innovative approach to data analysis and uncovers patterns in the data set that are not superficially obvious.
+Submission demonstrates an innovative approach to data analysis and uncovers patterns in the data set that are not superficially obvious.
 
 ### Prizes
 We will choose one winner from each of the three analysis categories:
