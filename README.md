@@ -1,6 +1,8 @@
 ## Overscripted Web: A Mozilla Data Analysis Challenge
 ### How to participate
 
+#### EXTENDED SUBMISSION DEADLINE: SEPTEMBER 7th, 2018
+
 The Systems Research Group at Mozilla have created and open sourced a data set of publicly available information that was collected by a November 2017 Web crawl. We want to empower the community to explore the unseen or otherwise not obvious series of JavaScript execution events that are triggered once a user visits a webpage, and all the first- and third-party events that are set in motion when people retrieve content.
 
 This is an exploratory data analysis challenge. Mozilla would like to encourage participants to think outside the proverbial box, get creative, and get under the surface. We want participants to analyze the data and come up with exciting new observations, patterns, and research findings fitting into one of the following three categories:
@@ -44,8 +46,11 @@ Mozilla may even choose to invite winning teams to present their findings in a 1
 
 ### Timeline
 - June 4th, 2018: Contest launches
+```diff
 - August 31st, 2018: Submission deadline
-- August 31st to September 13th, 2018: Judging period
++ EXTENDED DEADLINE: September 7th, 2018
+```
+- Until September 13th, 2018: Judging period
 - September 14th, 2018: Winners announcement
 - October 26th to 28th, 2018: Session at MozFest
 
