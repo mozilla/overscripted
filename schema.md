@@ -109,6 +109,29 @@
     \_ga=GA1.2.1076416180.1513383458; \_gid=GA1.2.1940452730.1513383458
     {"name": "example", "Browser": "Mozilla/5.0"}
     ```
+* __value_1000:__
+    * __Type:__ string
+    * __Description:__ The value that the function returned, restricted to 1000 characters.
+    * __Examples:__
+    ```
+    ""
+    {}
+    Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+    \_ga=GA1.2.1076416180.1513383458; \_gid=GA1.2.1940452730.1513383458
+    {"name": "example", "Browser": "Mozilla/5.0"}
+    ```
+* __value_len:__
+    * __Type:__ Integer
+    * __Description:__ The length of the value a function returned
+    * __Examples:__ 59508
+* __valid:__
+    * __Type:__ Boolean
+    * __Description:__ Whether the row returned a valid result during parsing
+    * __Examples:__ True/False
+* __errors:__
+    * __Type:__ string
+    * __Description:__ An error message if an error arised during row parsing
+    * __Examples:__ 
 * __arguments:__ 
 	* __Type:__ object
 	* __Description:__ Optional property which lists the arguments taken by the method in "symbol" field. 
@@ -117,3 +140,14 @@
     {\"0\":\"liveAgentPc\"}
     {\"0\":\"liveAgentPage_0\",\"1\":\"http://www.alamy.com/help/what-is-model-release-property-release.aspx\"}
     ```
+* __file_name:__ 
+	* __Type:__ string
+	* __Description:__ Concatenation of the crawl_id and the called file, format (crawl_id)_(called file name)
+	* __Examples:__ 
+	1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json
+* __call_id:__ 
+	* __Type:__ string
+	* __Description:__ Concatenation of the file name and a row identifier to distinguish between different calls to the same file, format (file_name)__(identifier)
+	* __Examples:__ 
+	1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json__121
+	
