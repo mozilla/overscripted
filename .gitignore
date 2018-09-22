@@ -1,0 +1,5 @@
+# jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# vim swap files
+*.sw?
