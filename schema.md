@@ -8,7 +8,10 @@
 * __crawl_id:__
     * __Type:__ Integer
     * __Description:__ Crawl_id appears to be the value 1 for all json files. It is possible this field was not used when generating the data using the crawler.
-    * __Example:__ 1
+    * __Example:__ 
+    ```
+    1
+    ```
 * __func_name:__
     * __Type:__ String
     * __Description:__ The name of the javascript function. Due to obfuscation the functions are often nonsensical and thus can be thought of as tokens. Anonymous functions will not have a name and the value will be an empty string.
@@ -111,7 +114,7 @@
     ```
 * __value_1000:__
     * __Type:__ string
-    * __Description:__ The value that the function returned, restricted to 1000 characters.
+    * __Description:__ The value that the function returned, truncated to 1000 characters.
     * __Examples:__
     ```
     ""
@@ -122,32 +125,58 @@
     ```
 * __value_len:__
     * __Type:__ Integer
-    * __Description:__ The length of the value a function returned
-    * __Examples:__ 59508
+    * __Description:__ The number of characters in the string representation of the value a function returned
+    * __Examples:__ 
+    ```
+    59508
+    ```
 * __valid:__
     * __Type:__ Boolean
     * __Description:__ Whether the row returned a valid result during parsing
-    * __Examples:__ True/False
+    * __Examples:__ 
+    ```
+    True
+    ```
 * __errors:__
     * __Type:__ string
     * __Description:__ An error message if an error arised during row parsing
-    * __Examples:__ 
+    * __Examples:__
 * __arguments:__ 
 	* __Type:__ object
 	* __Description:__ Optional property which lists the arguments taken by the method in "symbol" field. 
 	* __Examples:__ 
-    ``` 
+    ```
     {\"0\":\"liveAgentPc\"}
     {\"0\":\"liveAgentPage_0\",\"1\":\"http://www.alamy.com/help/what-is-model-release-property-release.aspx\"}
     ```
 * __file_name:__ 
-	* __Type:__ string
-	* __Description:__ Concatenation of the crawl_id and the called file, format (crawl_id)_(called file name)
-	* __Examples:__ 
-	1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json
+    * __Type:__ string
+    * __Description:__ Concatenation of the crawl_id and the name of a JSON file corresponding to a `location` in the raw collected data, format (crawl_id)_(JSON file name)
+    * __Examples:__ 
+    ```
+    1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json
+    ```
 * __call_id:__ 
-	* __Type:__ string
-	* __Description:__ Concatenation of the file name and a row identifier to distinguish between different calls to the same file, format (file_name)__(identifier)
-	* __Examples:__ 
-	1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json__121
-	
+    * __Type:__ string
+    * __Description:__ Concatenation of the file name and a row identifier to distinguish between different calls to the same file, format (file_name)__(identifier)
+    * __Examples:__ 
+    ```
+    1_f001bb59462bc80ee8ec9e6592b571d0a465cf3e05665953e71b9fe9.json__121
+    ```
+* __arguments_i:__ 
+    * __Type:__ string
+    * __Description:__ String representation of the argument passed to the function in position i, zero indexed.
+    * __Examples:__ 
+    ```
+    ''
+    {"domain":"backcountry.com"}
+    None
+    ```
+* __arguments_n_keys:__ 
+    * __Type:__ Integer
+    * __Description:__ The number of arguments in a function call
+    * __Examples:__ 
+    ```
+    0
+    5
+    ```
