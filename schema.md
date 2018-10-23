@@ -130,17 +130,6 @@
     ```
     59508
     ```
-* __valid:__
-    * __Type:__ Boolean
-    * __Description:__ Whether the row returned a valid result during parsing
-    * __Examples:__ 
-    ```
-    True
-    ```
-* __errors:__
-    * __Type:__ string
-    * __Description:__ An error message if an error arised during row parsing
-    * __Examples:__
 * __arguments:__ 
 	* __Type:__ object
 	* __Description:__ Optional property which lists the arguments taken by the method in "symbol" field. 
@@ -180,3 +169,15 @@
     0
     5
     ```
+
+* __valid:__
+    * __Type:__ Boolean
+    * __Description:__ Whether the row returned a valid result during parsing
+    * __Examples:__ 
+    ```
+    True
+    ```
+* __errors:__
+    * __Type:__ string
+    * __Description:__ An error message if an error arised during row parsing
+    * __Examples:__
