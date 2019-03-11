@@ -1,0 +1,1 @@
+A 4 stage pipeline for mass downloading javascript files, generating a list of potential symbols of interest, and parsing these symbols out of the downloaded scripts. Each stage of the pipeline has a more exhaustive readme - please check those for more details. 

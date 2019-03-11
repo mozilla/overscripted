@@ -1,0 +1,7 @@
+appdirs==1.4.3
+attrs==18.2.0
+Click==7.0
+pkg-resources==0.0.0
+python-slugify==1.2.6
+toml==0.10.0
+Unidecode==1.0.23
