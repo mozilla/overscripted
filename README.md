@@ -37,6 +37,7 @@ Unzipped the full parquet data will be approximately 70GB. Each (compressed) chu
 ### Glossary
 
 - TLD means Top-level Domain. You can read up more about it [here.](https://en.wikipedia.org/wiki/Top-level_domain) 
+- [Web Crawler](https://en.wikipedia.org/wiki/Web_crawler)- It is a program or automated script which browses the World Wide   Web in a methodical, automated manner.
 
 ### Resources
 
