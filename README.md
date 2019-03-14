@@ -32,6 +32,8 @@ Unzipped the full parquet data will be approximately 70GB. Each (compressed) chu
 
 - You can ask for help and discuss your ideas on gitter. Click [here](https://gitter.im/overscripted-discuss/community) to join !
 
+- If your OS is Ubuntu and you have trouble installing spark with conda. Refer to this [link](https://datawookie.netlify.com/blog/2017/07/installing-spark-on-ubuntu/).
+
 ### Glossary
 
 - TLD means Top-level Domain. You can read up more about it [here.](https://en.wikipedia.org/wiki/Top-level_domain) 
