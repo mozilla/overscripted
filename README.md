@@ -22,6 +22,8 @@ Unzipped the full parquet data will be approximately 70GB. Each (compressed) chu
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.3.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.3.tar.bz2)
 - [https://public-data.telemetry.mozilla.org/bigcrawl/SHA256SUMS](https://public-data.telemetry.mozilla.org/bigcrawl/SHA256SUMS)
 
+Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/analyses/hello_world.ipynb) to load and have a quick look at the data with pandas, dask and spark.
+
 ### New Contributor Tips
 
 - A valid and much appreciated contribution is to write any of your learnings, be it by reading research papers or through your interaction with the community on gitter and submitting a Pull Request to the repository. You can submit the PR to the README on the main page or the analysis folder README.
