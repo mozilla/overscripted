@@ -48,3 +48,5 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 - [This](https://github.com/brandon-rhodes/pycon-pandas-tutorial) is a great tutorial to learn Pandas.
 
 - [Tutorial](https://www.youtube.com/watch?v=HW29067qVWk) on Jupyter Notebook.
+
+- We have used dask in some of our Jupyter notebooks. Dask gives you a pandas-like API but lets you work on data that is too big to fit in memory. Dask can be used on a single machine or a cluster. Most analyses done for this project were done on a single machine. Please start by reviewing the [docs](https://dask.org/) to learn more about it.
