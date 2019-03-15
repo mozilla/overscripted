@@ -12,10 +12,19 @@ Ongoing analyses can be tracked [here](https://github.com/mozilla/overscripted/t
 - Any additional code submitted will not be considered. The *.ipynb notebook should be a self contained analysis.
 
 ### Accessing the Data
-Each of the links below links to a bz2 zipped portion of the total dataset. A small sample of the data is available in `safe_dataset.sample.tar.bz2` to get a feel for the content without commiting to the full download.
+Each of the links below links to a bz2 zipped portion of the total dataset. 
+
+A small sample of the data is available in `safe_dataset.sample.tar.bz2` to get a feel for the content without commiting to the full download.
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.sample.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.sample.tar.bz2)
 
-Unzipped the full parquet data will be approximately 70GB. Each (compressed) chunk dataset is around 9GB. `SHA256SUMS` contains the checksums for all datasets including the sample.
+Three samples that are large enough to meaningful analysis of the dataset are
+also available as the full dataset is very large. More details about the
+samples are available in [data_prep/Sample Review.ipynb](https://github.com/mozilla/overscripted/blob/master/data_prep/Sample%20Review.ipynb)
+- https://public-data.telemetry.mozilla.org/bigcrawl/sample_10percent_value_1000_only.parquet.tar.bz2 - 900MB download / 1.3GB on disk
+- https://public-data.telemetry.mozilla.org/bigcrawl/sample_10percent_value.parquet.tar.bz2 - 3.7GB download / 7.4GB on disk
+- https://public-data.telemetry.mozilla.org/bigcrawl/sample_10percent_value.parquet.tar.bz2 - 9.1GB download / 15GB on disk
+
+The full dataset. Unzipped the full parquet data will be approximately 70GB. Each (compressed) chunk dataset is around 9GB. `SHA256SUMS` contains the checksums for all datasets including the sample.
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.0.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.0.tar.bz2)
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.1.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.1.tar.bz2)
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.2.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.2.tar.bz2)
