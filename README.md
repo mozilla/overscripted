@@ -35,7 +35,7 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 
 ### New Contributor Tips
 
-- A valid and much appreciated contribution is to write any of your learnings, be it by reading research papers or through your interaction with the community on gitter and submitting a Pull Request to the repository. You can submit the PR to the README on the main page or the analysis folder README.
+- Make contributions with respect to any of your learnings, be it by reading related research papers or through your interaction with the community on gitter and submitting a Pull Request (PR) to the repository. You can submit the PR to the README on the main page or the analysis folder README.
 
 - This is not a one issue per person repo. All the questions are very open ended and different people may find very different and complementary things when looking at a question.
 
@@ -46,6 +46,8 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 - Please reference your issues on a PR so that they link and autoclose. Refer to [this](https://help.github.com/en/articles/closing-issues-using-keywords)
 
 - If your OS is Ubuntu and you have trouble installing spark with conda. Refer to this [link](https://datawookie.netlify.com/blog/2017/07/installing-spark-on-ubuntu/).
+
+- The dataset is very large. Even the subsets of the dataset are unlikely to fit into memory. Working with this dataset will typically require using Dask (http://dask.pydata.org/), Spark (http://spark.apache.org/) or similar tools to enable parallelized / out-of-core / distributed processing.
 
 ### Glossary
 
@@ -61,3 +63,5 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 - [Tutorial](https://www.youtube.com/watch?v=HW29067qVWk) on Jupyter Notebook.
 
 - We have used dask in some of our Jupyter notebooks. Dask gives you a pandas-like API but lets you work on data that is too big to fit in memory. Dask can be used on a single machine or a cluster. Most analyses done for this project were done on a single machine. Please start by reviewing the [docs](https://dask.org/) to learn more about it.
+
+-[This](https://github.com/aSquare14/Git-Cheat-Sheet) will help you get started with GIT. For visual thinkers this [tutorial](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx) can be a good start.
