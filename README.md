@@ -43,6 +43,8 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 
 - You can ask for help and discuss your ideas on gitter. Click [here](https://gitter.im/overscripted-discuss/community) to join !
 
+- When you open an issue and work on a Pull Request relating to the same, add "WIP" in the title of the PR. "WIP" is work in progress. When your PR is ready for review remove the WIP tag. You can also request feedback on specific things while it's still a WIP.
+
 - Please reference your issues on a PR so that they link and autoclose. Refer to [this](https://help.github.com/en/articles/closing-issues-using-keywords)
 
 - If your OS is Ubuntu and you have trouble installing spark with conda. Refer to this [link](https://datawookie.netlify.com/blog/2017/07/installing-spark-on-ubuntu/).
