@@ -54,7 +54,9 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 ### Glossary
 
 - TLD means Top-level Domain. You can read up more about it [here.](https://en.wikipedia.org/wiki/Top-level_domain) 
+- [User Agent](https://en.wikipedia.org/wiki/User_agent) (UA), is a string that helps identify which browser is being used, what version, and on which operating system.
 - [Web Crawler](https://en.wikipedia.org/wiki/Web_crawler)- It is a program or automated script which browses the World Wide   Web in a methodical, automated manner.
+
 
 ### Resources
 
