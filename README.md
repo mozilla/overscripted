@@ -4,6 +4,8 @@ The Systems Research Group (SRG) at Mozilla have created and open sourced a data
 Some preliminary insights already uncovered from this data are illustrated in this [blog post](https://medium.com/firefox-context-graph/overscripted-digging-into-javascript-execution-at-scale-2ed508f21862). 
 Ongoing analyses can be tracked [here](https://github.com/mozilla/overscripted/tree/master/analyses)
 
+The crawl data hosted here was collected using [openWPM](https://github.com/mozilla/OpenWPM), which is developed and maintained by the Mozilla Security Engineering team.
+
 ### Submitting an analysis:
 - Analyses should be performed in Python using the [jupyter scientific notebook](https://jupyter-notebook.readthedocs.io/en/stable/) format and executing in this [environment](https://github.com/mozilla/overscripted/blob/master/analyses/environment.yaml). 
 - Analysis can be submitted by filing a [Pull Request](https://help.github.com/articles/using-pull-requests) against this repository with the analysis formatted as an *.ipynb file or folder in the /analyses/ folder. 
