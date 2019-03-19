@@ -6,10 +6,11 @@ Ongoing analyses can be tracked [here](https://github.com/mozilla/overscripted/t
 
 ### Technical criteria for submitting an analysis:
 - Analyses should be performed in Python using the [jupyter scientific notebook](https://jupyter-notebook.readthedocs.io/en/stable/) format and executing in this [environment](https://github.com/mozilla/overscripted/blob/master/analyses/environment.yaml). 
-- Analysis can be submitted by filing a [Pull Request](https://help.github.com/articles/using-pull-requests) against __this__[ repository](https://github.com/mozilla/overscripted) with the analysis formatted as an *.ipynb file in the /analyses/ folder. 
-  - Environment can be configured locally by calling `conda env create -f  environment.yaml`
-- Only *.ipynb format entries submitted via a pull request to the /analyses/ folder will be considered. Notebooks must be well documented and run on the [environment](https://github.com/mozilla/overscripted/blob/master/analyses/environment.yaml) described. Any entries not meeting these criteria will not be considered and no review will be carried out for error-generating code.
-- Any additional code submitted will not be considered. The *.ipynb notebook should be a self contained analysis.
+- Analysis can be submitted by filing a [Pull Request](https://help.github.com/articles/using-pull-requests) against this repository with the analysis formatted as an *.ipynb file or folder in the /analyses/ folder. 
+  - Set-up instructions are provided here: https://github.com/mozilla/overscripted/blob/master/analyses/README.md
+- Only *.ipynb format entries submitted via a pull request to the /analyses/ folder will be considered. Notebooks must be well documented and run on the [environment](https://github.com/mozilla/overscripted/blob/master/analyses/environment.yaml) described. If additional installations are needed these should be documented.
+- Files and folders should have the format `yyyy_mm_username__short-title` - the analyses directory contains examples already if this is not clear.
+- PRs altering or updating an existing analysis will not be accepted unless they are tweaking formatting / small errors to facilitate that notebook running. If you wish to continue / build-on someone else's existing analysis start your own analysis folder / file, cite their work, and then proceed with your extension.
 
 ### Accessing the Data
 Each of the links below links to a bz2 zipped portion of the total dataset. 
