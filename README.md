@@ -55,10 +55,11 @@ Refer [hello_world.ipynb](https://github.com/mozilla/overscripted/blob/master/an
 - The dataset is very large. Even the subsets of the dataset are unlikely to fit into memory. Working with this dataset will typically require using Dask (http://dask.pydata.org/), Spark (http://spark.apache.org/) or similar tools to enable parallelized / out-of-core / distributed processing.
 
 ### Glossary
-
+- [Fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint) is the process of creating a unique identifier based off of some characteristics of your hardware, operating  system and browser. 
 - TLD means Top-level Domain. You can read up more about it [here.](https://en.wikipedia.org/wiki/Top-level_domain) 
-- [User Agent](https://en.wikipedia.org/wiki/User_agent) (UA), is a string that helps identify which browser is being used, what version, and on which operating system.
+- [User Agent](https://en.wikipedia.org/wiki/User_agent) (UA), is a string that helps identify which browser is being used, what version, and on which operating system. 
 - [Web Crawler](https://en.wikipedia.org/wiki/Web_crawler)- It is a program or automated script which browses the World Wide   Web in a methodical, automated manner.
+
 
 
 ### Resources
