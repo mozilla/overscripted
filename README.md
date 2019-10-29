@@ -17,7 +17,7 @@ The crawl data hosted here was collected using [OpenWPM](https://github.com/mozi
 ### Accessing the Data
 Each of the links below links to a bz2 zipped portion of the total dataset. 
 
-A small sample of the data is available in `safe_dataset.sample.tar.bz2` to get a feel for the content without commiting to the full download.
+A small sample of the data is available in `safe_dataset.sample.tar.bz2` to get a feel for the content without committing to the full download.
 - [https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.sample.tar.bz2](https://public-data.telemetry.mozilla.org/bigcrawl/safe_dataset.sample.tar.bz2)
 
 Three samples that are large enough to meaningful analysis of the dataset are
